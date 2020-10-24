@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="estilos.css" />
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora Simple</h1>    
+        </header>
+        <div class="grid">
+            <div class="item">
+                <form action="procesar.jsp">
+                    <table>
+                        <tr>
+                            <td><label for="num1">Ingrese el primer número:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="num1" name="numero1"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="num2">Ingrese el segundo número:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="num2" name="numero2"/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="suma" name="operacion" value="Suma" />
+                                <label for="suma">Suma +</label>
+
+                                <input type="radio" id="resta" name="operacion" value="Resta" />
+                                <label for="resta">Resta -</label>
+
+                                <input type="radio" id="mult" name="operacion" value="Multiplicacion" />
+                                <label for="mult">Multiplicación *</label>
+
+                                <input type="radio" id="div" name="operacion" value="Division" />
+                                <label for="div">División /</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                                
+                                    <input type="submit" id="submit" value="Realizar Operación" />                                  
+                            </td>                
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>            
+                    </table>              
+                </form>    
+            </div>
+        </div>        
+    </body>
+</html>
